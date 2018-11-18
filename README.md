@@ -7,7 +7,7 @@ Building the boilerplate based on
 [this](https://craigc0de.blogspot.com/2018/07/phoenix-reasonreact-full-stack.html)
 tutorial
 
-```
+```bash
 cd assets  
 yarn add bs-platform --dev
 yarn add react react-dom reason-react 
@@ -15,7 +15,7 @@ yarn add react react-dom reason-react
 
 Add the bsconfig.json to connect to redex:
 
-```
+```javascript
 {
   "name": "ex_reason",
   "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"],
@@ -39,7 +39,7 @@ Add the bsconfig.json to connect to redex:
 
 Add to your package.json:
 
-```
+```javascript
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
@@ -49,12 +49,12 @@ Add to your package.json:
 
 And now:
 
-```
+```bash
 yarn build
 ```
 
 To have auto-compile, change your webpack.config.js:
-```
+```javascript
 entry: {
     './js/app.js': ['./js/root.bs.js'].concat(glob.sync('./vendor/**/*.js'))
 },
@@ -62,7 +62,7 @@ entry: {
 
 Edit your app.html.eex
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -82,7 +82,7 @@ Edit your app.html.eex
 To be able to start back and front end watchers, create a
 ex_reason/lib/mix/tasks/start.ex script:
 
-```
+```elixir
 defmodule Mix.Tasks.ExReason.Start do
   use Mix.Task
   @shortdoc "For Development - watches changes in Phoenix and ReasonML code."
@@ -101,26 +101,9 @@ end
 ```
 
 Now start:
-```
+```bash
 mix ex_reason.start
 ```
 
-
-To start your Phoenix server:
-
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
-
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
