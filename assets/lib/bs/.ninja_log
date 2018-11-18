@@ -1,0 +1,27 @@
+# ninja log v5
+0	11	1542537905	js/root.mlast	22e3e7e30a926ef5
+0	11	1542537905	js/page.mlast	1d252c695ab7018
+11	12	1542537905	js/root.mlast.d	aeb455ff5c519803
+11	12	1542537905	js/page.mlast.d	b170d51b880ad116
+0	14	1542537905	js/page.cmj	edb47c49e0174766
+0	14	1542537905	/home/henry/rd/ex_reason/assets/js/page.bs.js	edb47c49e0174766
+0	14	1542537905	js/page.cmi	edb47c49e0174766
+14	23	1542537905	js/root.cmj	34692d69961fcba3
+14	23	1542537905	/home/henry/rd/ex_reason/assets/js/root.bs.js	34692d69961fcba3
+14	23	1542537905	js/root.cmi	34692d69961fcba3
+0	10	1542538687	js/page.mlast	1d252c695ab7018
+10	12	1542538687	js/page.mlast.d	b170d51b880ad116
+0	15	1542538687	js/page.cmj	edb47c49e0174766
+0	15	1542538687	/home/henry/rd/ex_reason/assets/js/page.bs.js	edb47c49e0174766
+0	15	1542538687	js/page.cmi	edb47c49e0174766
+15	24	1542538687	js/root.cmj	34692d69961fcba3
+15	24	1542538687	/home/henry/rd/ex_reason/assets/js/root.bs.js	34692d69961fcba3
+15	24	1542538687	js/root.cmi	34692d69961fcba3
+0	11	1542539050	js/page.mlast	1d252c695ab7018
+11	13	1542539050	js/page.mlast.d	b170d51b880ad116
+0	16	1542539050	js/page.cmj	edb47c49e0174766
+0	16	1542539050	/home/henry/rd/ex_reason/assets/js/page.bs.js	edb47c49e0174766
+0	16	1542539050	js/page.cmi	edb47c49e0174766
+17	27	1542539050	js/root.cmj	34692d69961fcba3
+17	27	1542539050	/home/henry/rd/ex_reason/assets/js/root.bs.js	34692d69961fcba3
+17	27	1542539050	js/root.cmi	34692d69961fcba3
