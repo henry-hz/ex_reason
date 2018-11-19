@@ -1,8 +1,8 @@
-'use strict';
 
-var Curry = require("bs-platform/lib/js/curry.js");
-var React = require("react");
-var ReasonReact = require("reason-react/src/ReasonReact.js");
+
+import * as Curry from "bs-platform/lib/es6/curry.js";
+import * as React from "react";
+import * as ReasonReact from "reason-react/lib/es6/src/ReasonReact.js";
 
 var component = ReasonReact.statelessComponent("page");
 
@@ -34,7 +34,10 @@ function make(message, _children) {
         ];
 }
 
-exports.component = component;
-exports.handleClick = handleClick;
-exports.make = make;
+export {
+  component ,
+  handleClick ,
+  make ,
+  
+}
 /* component Not a pure module */

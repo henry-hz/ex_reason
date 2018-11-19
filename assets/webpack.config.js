@@ -13,7 +13,7 @@ module.exports = (env, options) => ({
     ]
   },
   entry: {
-      './js/app.js': ['./js/root.bs.js'].concat(glob.sync('./vendor/**/*.js'))
+    './js/app.js': ['./lib/es6/src/root.bs.js'].concat(glob.sync('./vendor/**/*.js'))
   },
   output: {
     filename: 'app.js',
@@ -29,8 +29,8 @@ module.exports = (env, options) => ({
         }
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        test: /\.s?css$/,
+        use: [MiniCssExtractPlugin.loader,'style-loader','css-loader', 'sass-loader']
       }
     ]
   },
