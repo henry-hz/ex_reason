@@ -1,9 +1,10 @@
 {
+  "name":"ex-reason",
   "repository": {},
   "license": "MIT",
   "scripts": {
-    "deploy": "webpack --mode production",
-    "watch": "webpack --mode development --watch",
+    "deploy": "parcel build lib/es6/src/root.bs.js --out-dir ../priv/static/js",
+    "watch": "parcel watch lib/es6/src/root.bs.js --out-dir ../priv/static/js",
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world"
@@ -13,22 +14,21 @@
     "phoenix_html": "file:../deps/phoenix_html",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "reason-react": "^0.5.3",
-    "style-loader": "^0.23.1"
+    "reason-react": "^0.5.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ]
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "babel-loader": "^8.0.0",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
     "bs-platform": "^4.0.7",
-    "copy-webpack-plugin": "^4.5.0",
-    "css-loader": "^0.28.10",
-    "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.10.0",
-    "optimize-css-assets-webpack-plugin": "^4.0.0",
-    "sass-loader": "^7.1.0",
-    "uglifyjs-webpack-plugin": "^1.2.4",
-    "webpack": "4.4.0",
-    "webpack-cli": "^2.0.10"
+    "parcel-bundler": "^1.10.3"
   }
 }

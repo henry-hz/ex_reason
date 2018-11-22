@@ -1,6 +1,7 @@
 
 
 import * as Curry from "bs-platform/lib/es6/curry.js";
+import * as Utils from "./utils.bs.js";
 import * as React from "react";
 import * as ReasonReact from "reason-react/lib/es6/src/ReasonReact.js";
 
@@ -24,8 +25,9 @@ function make(message, _children) {
           /* shouldUpdate */component[/* shouldUpdate */8],
           /* render */(function (self) {
               return React.createElement("div", {
+                          className: "jim",
                           onClick: Curry._1(self[/* handle */0], handleClick)
-                        }, message);
+                        }, React.createElement("h1", undefined, Utils.str(message)));
             }),
           /* initialState */component[/* initialState */10],
           /* retainedProps */component[/* retainedProps */11],

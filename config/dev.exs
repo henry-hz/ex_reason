@@ -13,10 +13,11 @@ config :ex_reason, ExReasonWeb.Endpoint,
   check_origin: false,
   watchers: [
     node: [
-      "node_modules/webpack/bin/webpack.js",
-      "--mode",
-      "development",
-      "--watch-stdin",
+      "node_modules/parcel-bundler/bin/cli.js",
+      "watch",
+      "lib/es6/src/root.bs.js",
+      "--out-dir",
+      "../priv/static/js",
       cd: Path.expand("../assets", __DIR__)
     ]
   ]
