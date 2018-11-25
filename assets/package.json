@@ -1,10 +1,10 @@
 {
-  "name":"ex-reason",
+  "name": "ex-reason",
   "repository": {},
   "license": "MIT",
   "scripts": {
-    "deploy": "parcel build lib/es6/src/root.bs.js --out-dir ../priv/static/js",
-    "watch": "parcel watch lib/es6/src/root.bs.js --out-dir ../priv/static/js",
+    "deploy": "parcel build src/root.re --out-dir ../priv/static/js",
+    "watch": "parcel watch src/root.re --out-dir ../priv/static/js",
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world"
@@ -28,6 +28,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "bs-platform": "^4.0.7",
+    "bsb-js": "^1.1.7",
     "node-sass": "^4.10.0",
     "parcel-bundler": "^1.10.3"
   }

@@ -15,7 +15,7 @@ config :ex_reason, ExReasonWeb.Endpoint,
     node: [
       "node_modules/parcel-bundler/bin/cli.js",
       "watch",
-      "lib/es6/src/root.bs.js",
+      "src/root.re",
       "--out-dir",
       "../priv/static/js",
       cd: Path.expand("../assets", __DIR__)
